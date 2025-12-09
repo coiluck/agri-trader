@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-weight: normal;
+  font-family: var(--font);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+button, select {
+  cursor: pointer;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  inset: 0;
+}
+
+.fade-in {
+  animation: FadeIn .3s;
+  animation-fill-mode: both;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: FadeOut .3s;
+  animation-fill-mode: both;
+}
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
