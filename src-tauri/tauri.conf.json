@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "identifier": "com.agri-trader.app",
   "build": {
-    "frontendDist": "../src"
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
   },
   "app": {
     "withGlobalTauri": true,
@@ -12,7 +15,7 @@
       {
         "title": "agri-trader",
         "width": 800,
-        "height": 600
+        "height": 500
       }
     ],
     "security": {

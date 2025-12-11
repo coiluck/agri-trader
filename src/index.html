@@ -28,15 +28,15 @@
           <img src="" />
         </div>
         <div class="top-game-button-contaier">
-          <div class="top-game-button new">Start</div>
-          <div class="top-game-button restart">Continue</div>
+          <div class="top-game-button new" id="top-game-button-new">Start</div>
+          <div class="top-game-button restart" id="top-game-button-restart">Continue</div>
           <div class="top-sub-button-container">
-            <div class="top-sub-button">
-              <div class="top-sub-button-icon"></div>
+            <div class="top-sub-button" id="top-sub-button-settings">
+              <div class="top-sub-button-icon settings"></div>
               <div class="top-sub-button-text">Settings</div>
             </div>
-            <div class="top-sub-button">
-              <div class="top-sub-button-icon"></div>
+            <div class="top-sub-button" id="top-sub-button-research">
+              <div class="top-sub-button-icon research"></div>
               <div class="top-sub-button-text">Research</div>
             </div>
           </div>
@@ -44,6 +44,13 @@
       </div>
     </div>
 
+    <div id="modal-game" class="modal"></div>
+
+    <div id="modal-settings" class="modal"></div>
+
+    <div id="modal-research" class="modal"></div>
+
     <script src="./js/logo.js" type="module"></script>
+    <script src="./js/top.js" type="module"></script>
   </body>
 </html>
