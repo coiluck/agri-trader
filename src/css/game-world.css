@@ -1,0 +1,76 @@
+.game-world-container {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5dbdee;
+  overflow: hidden;
+}
+.game-world-ground {
+  position: relative;
+  width: 480px;
+  height: 400px;
+  background-color: #7cb342;
+  background-image: 
+    linear-gradient(#8bc34a 2px, transparent 2px),
+    linear-gradient(90deg, #8bc34a 2px, transparent 2px);
+  background-size: 80px 80px;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg) rotateZ(-45deg);
+}
+
+/* 切り株 */
+.game-stump-container {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 80px;
+  height: 80px;
+  transform: none; 
+  transform-style: preserve-3d;
+  pointer-events: none;
+  z-index: 10;
+}
+.game-stump-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/game/stump.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  transform: rotateZ(45deg) rotateX(-60deg);
+  transform-origin: bottom center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* 畑エリア */
+.game-farm-area {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}
+.game-farm-tile {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  position: relative;
+}
+.game-farm-tile-inner {
+  width: 100%;
+  height: 100%;
+  background: #5d4037;
+  border: 1px solid #3e2723;
+  transition: all 0.2s;
+}
+.game-farm-tile-inner:hover { 
+  background: #6d4c41;
+}
+
+/* 作物 */

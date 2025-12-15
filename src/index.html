@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/logo.css" />
     <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/game-world.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agri Trader</title>
   </head>
@@ -44,7 +45,31 @@
       </div>
     </div>
 
-    <div id="modal-game" class="modal"></div>
+    <div id="modal-game" class="modal">
+      <div class="game-world-container">
+        <div class="game-world-ground">
+          <div class="game-stump-container">
+            <div class="game-stump-image"></div>
+          </div>
+
+          <div class="game-farm-area">
+            <div class="game-farm-tile" data-x="0" data-y="0">
+              <div class="game-farm-tile-inner">
+                <div class="game-crop potato"></div>
+              </div>
+            </div>
+              <div class="game-farm-tile" data-x="1" data-y="0">
+              <div class="game-farm-tile-inner">
+                <div class="game-crop carrot"></div>
+              </div>
+            </div>
+            <div class="game-farm-tile" data-x="2" data-y="0">
+              <div class="game-farm-tile-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="modal-settings" class="modal"></div>
 
